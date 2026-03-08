@@ -1,0 +1,126 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* 🌌 Fond animé */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #69154c, #845ec2, #0f5a4d, #719cf9);
+    background-size: 400% 400%;
+    animation: gradientMove 40s ease infinite;
+}
+
+/* Animation du fond */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Conteneur */
+#Type ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Liens */
+#Type ul a {
+    text-decoration: none;
+}
+
+/* 🎉 Boutons stylés */
+#Type button {
+    width: 260px;
+    padding: 18px 25px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: white;
+    background: rgba(255, 255, 255, 0.15);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    cursor: pointer;
+    transition: 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Effet neon autour */
+#Type button::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    left: -80px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.5s ease;
+}
+
+/* Hover : effet vague + glow */
+#Type button:hover::before {
+    transform: scale(1.5);
+}
+
+#Type button:hover {
+    transform: translateY(-5px) scale(1.07);
+    border-color: white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+/* Effet clic */
+#Type button:active {
+    transform: scale(0.95);
+}
+
+
+/* Animation : entrée depuis la droite */
+@keyframes slideIn {
+    0% {
+        transform: translateX(200%);
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(-10%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Animation : sortie vers la droite */
+@keyframes slideOut {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    40% {
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(200%);
+        opacity: 0;
+    }
+}
+
+/* Classe appliquée pour faire entrer les boutons */
+.enter {
+    animation: slideIn 0.7s ease forwards;
+}
+
+/* Classe appliquée pour faire sortir les boutons */
+.exit {
+    animation: slideOut 0.7s ease forwards;
+}

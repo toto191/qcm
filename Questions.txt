@@ -1,0 +1,89 @@
+# FORMAT : THEME|QUESTION|REPONSE_A|REPONSE_B|REPONSE_C|REPONSE_D|BONNE_REPONSE(A/B/C/D)
+
+[Language]
+Language|Quel est le mot correct pour "se dépêcher" en français soutenu ?|Se hâter|Se grouiller|Se magner|Se bouger|A
+Language|Quelle est la figure de style dans "le soleil se couche" ?|Métaphore|Personnification|Allitération|Hyperbole|B
+Language|Combien de lettres compte l'alphabet français ?|24|25|26|27|C
+Language|Quel est le pluriel correct de "oeil" ?|Oeils|Oeillets|Yeux|Oeux|C
+Language|Quelle langue est la plus parlée dans le monde ?|Anglais|Espagnol|Mandarin|Hindi|C
+Language|Quel est l'antonyme de "belliqueux" ?|Pacifique|Violent|Agressif|Hostile|A
+Language|Dans quelle langue est écrit "Don Quichotte" à l'origine ?|Portugais|Espagnol|Latin|Italien|B
+Language|Que signifie le préfixe "poly" ?|Un|Deux|Plusieurs|Aucun|C
+Language|Quel est le féminin de "canard" ?|Canarde|Canne|Cane|Canette|C
+Language|Quelle est la langue officielle du Brésil ?|Espagnol|Portugais|Français|Brésilien|B
+Language|Lequel de ces mots est un palindrome ?|Rêve|Radar|Repas|Remue|B
+Language|Quel temps est utilisé dans "Si j'avais su, je serais venu" ?|Futur antérieur|Conditionnel présent / Imparfait|Subjonctif présent|Passé composé|B
+Language|Que désigne un "oxymore" ?|Une répétition|Deux mots de même sens|Deux termes contradictoires|Un jeu de mots|C
+Language|Quel est le nom du point "!" ?|Point exclamatif|Point d'emphase|Point d'alerte|Point fort|A
+Language|Combien de voyelles compte la langue française ?|4|5|6|7|C
+Language|Que signifie "Carpe Diem" ?|Profite du jour présent|Mange le poisson|Travaille dur|Respecte les anciens|A
+Language|Quel écrivain a dit "Je pense donc je suis" ?|Voltaire|Descartes|Pascal|Rousseau|B
+Language|Comment appelle-t-on une phrase sans verbe ?|Phrase elliptique|Phrase nominale|Phrase simple|Phrase muette|B
+Language|Quel est le contraire de "épiphore" en rhétorique ?|Anaphore|Métonymie|Synecdoque|Antithèse|A
+Language|Quelle langue utilise l'alphabet cyrillique ?|Grec|Arabe|Russe|Turc|C
+
+[Geo]
+Geo|Quelle est la capitale de l'Australie ?|Sydney|Melbourne|Canberra|Brisbane|C
+Geo|Quel est le plus grand océan du monde ?|Atlantique|Indien|Arctique|Pacifique|D
+Geo|Dans quel pays se trouve le Machu Picchu ?|Colombie|Pérou|Bolivie|Équateur|B
+Geo|Quel est le plus long fleuve d'Afrique ?|Niger|Congo|Zambèze|Nil|D
+Geo|Combien de pays composent l'Amérique du Sud ?|10|11|12|13|C
+Geo|Quelle mer sépare l'Europe de l'Afrique à l'ouest ?|Mer Rouge|Mer Noire|Mer Méditerranée|Mer Caspienne|C
+Geo|Quel est le pays le plus peuplé du monde en 2024 ?|Chine|États-Unis|Inde|Indonésie|C
+Geo|Dans quel pays se trouve le mont Kilimandjaro ?|Kenya|Tanzanie|Ouganda|Éthiopie|B
+Geo|Quelle est la superficie de la Russie en millions de km² (approx.) ?|10|14|17|20|C
+Geo|Quel détroit sépare l'Espagne du Maroc ?|Détroit de Malacca|Détroit de Gibraltar|Détroit de Béring|Détroit de Magellan|B
+Geo|Quelle est la capitale du Canada ?|Toronto|Vancouver|Montréal|Ottawa|D
+Geo|Dans quel continent se trouve Madagascar ?|Asie|Amérique|Afrique|Océanie|C
+Geo|Quel pays possède le plus grand nombre de fuseaux horaires ?|Russie|États-Unis|France|Chine|C
+Geo|Quelle est la plus haute montagne du monde ?|K2|Mont Blanc|Everest|Aconcagua|C
+Geo|Quel fleuve traverse Paris ?|La Loire|Le Rhône|La Seine|La Garonne|C
+Geo|Combien de pays partagent une frontière avec la France ?|7|8|9|10|B
+Geo|Quelle ville est surnommée "La Sérénissime" ?|Florence|Venise|Naples|Gênes|B
+Geo|Dans quel pays se trouve l'Amazonie en majorité ?|Colombie|Pérou|Venezuela|Brésil|D
+Geo|Quel est le désert le plus grand du monde ?|Sahara|Gobi|Antarctique|Arabie|C
+Geo|Quelle est la capitale de la Nouvelle-Zélande ?|Auckland|Christchurch|Wellington|Hamilton|C
+
+[Histoire]
+Histoire|En quelle année a eu lieu la Révolution française ?|1776|1789|1799|1815|B
+Histoire|Qui était le premier président des États-Unis ?|Abraham Lincoln|Thomas Jefferson|Benjamin Franklin|George Washington|D
+Histoire|Quel empire a construit le Colisée ?|Grec|Ottoman|Romain|Byzantin|C
+Histoire|En quelle année a été signé l'armistice de la Première Guerre mondiale ?|1916|1917|1918|1919|C
+Histoire|Qui a découvert l'Amérique en 1492 ?|Amerigo Vespucci|Vasco de Gama|Christophe Colomb|Ferdinand Magellan|C
+Histoire|Quelle civilisation a construit les pyramides de Gizeh ?|Mésopotamienne|Grecque|Égyptienne|Romaine|C
+Histoire|Quel roi de France était surnommé "le Roi Soleil" ?|Louis XIV|Louis XV|Louis XVI|Henri IV|A
+Histoire|En quelle année le mur de Berlin est-il tombé ?|1987|1988|1989|1990|C
+Histoire|Qui a dirigé l'URSS pendant la Seconde Guerre mondiale ?|Lénine|Khrouchtchev|Brejnev|Staline|D
+Histoire|Quelle bataille a mis fin à l'empire napoléonien ?|Austerlitz|Borodino|Waterloo|Leipzig|C
+Histoire|En quelle année Christophe Colomb est-il né ?|1441|1451|1461|1471|B
+Histoire|Qui était Cléopâtre ?|Une reine romaine|La dernière reine d'Égypte|Une déesse grecque|Une impératrice byzantine|B
+Histoire|Quel traité a mis fin à la Première Guerre mondiale ?|Traité de Paris|Traité de Versailles|Traité de Berlin|Traité de Londres|B
+Histoire|En quelle année a été fondée la République française (la 5e) ?|1944|1946|1958|1962|C
+Histoire|Qui a inventé l'imprimerie en Europe ?|Léonard de Vinci|Nicolas Copernic|Johannes Gutenberg|Galilée|C
+Histoire|Quelle est la date de la prise de la Bastille ?|14 juillet 1789|4 août 1789|26 août 1789|5 mai 1789|A
+Histoire|Quel pharaon est associé au tombeau découvert en 1922 ?|Ramsès II|Toutânkhamon|Akhenaton|Cléopâtre VII|B
+Histoire|Combien d'années a duré la Guerre de Cent Ans ?|80|100|116|150|C
+Histoire|Qui était le premier homme à marcher sur la Lune ?|Buzz Aldrin|Yuri Gagarine|Neil Armstrong|John Glenn|C
+Histoire|En quelle année a débuté la Seconde Guerre mondiale ?|1937|1938|1939|1940|C
+
+[Cinéma]
+Cinéma|Qui a réalisé "Titanic" (1997) ?|Steven Spielberg|Ridley Scott|James Cameron|Christopher Nolan|C
+Cinéma|Dans quel film trouve-t-on le personnage de Forrest Gump ?|Rain Man|Forrest Gump|The Green Mile|Cast Away|B
+Cinéma|Quel acteur joue Iron Man dans le MCU ?|Chris Evans|Mark Ruffalo|Robert Downey Jr.|Chris Hemsworth|C
+Cinéma|Quel film a remporté l'Oscar du meilleur film en 2020 ?|1917|The Irishman|Once Upon a Time in Hollywood|Parasite|D
+Cinéma|Qui a réalisé la trilogie "Le Seigneur des Anneaux" ?|George Lucas|Peter Jackson|Ridley Scott|Steven Spielberg|B
+Cinéma|Dans quel film Jodie Foster joue-t-elle une agent du FBI face à Hannibal Lecter ?|Seven|Le Silence des agneaux|Zodiac|Hannibal|B
+Cinéma|Quel est le film le plus rentable de l'histoire du cinéma ?|Avengers Endgame|Titanic|Star Wars|Avatar|D
+Cinéma|Qui a composé la musique originale de "Star Wars" ?|Hans Zimmer|Ennio Morricone|John Williams|Howard Shore|C
+Cinéma|Dans quel pays est né le cinéma des frères Lumière ?|États-Unis|Royaume-Uni|Allemagne|France|D
+Cinéma|Quel acteur joue dans "Fight Club" aux côtés d'Edward Norton ?|Johnny Depp|Brad Pitt|Tom Hanks|Kevin Spacey|B
+Cinéma|Quel réalisateur est connu pour ses films "Pulp Fiction" et "Kill Bill" ?|David Fincher|Martin Scorsese|Quentin Tarantino|Stanley Kubrick|C
+Cinéma|En quelle année est sorti le premier "Star Wars" ?|1975|1977|1979|1981|B
+Cinéma|Quelle actrice joue Hermione Granger dans Harry Potter ?|Keira Knightley|Natalie Portman|Emma Watson|Emma Stone|C
+Cinéma|Quel film Disney met en scène un lion prénommé Simba ?|Bambi|Dumbo|Le Roi Lion|Tarzan|C
+Cinéma|Qui a réalisé "Inception" (2010) ?|J.J. Abrams|Ridley Scott|Christopher Nolan|Denis Villeneuve|C
+Cinéma|Dans quel film trouve-t-on la réplique "Tu ne peux pas gérer la vérité !" ?|A Few Good Men|Philadelphia|The Firm|Primal Fear|A
+Cinéma|Quel acteur a joué dans "Gladiator", "A Beautiful Mind" et "L.A. Confidential" ?|Tom Hanks|Russell Crowe|Harrison Ford|Denzel Washington|B
+Cinéma|Quelle est la durée approximative de "La Ligne verte" (1999) ?|2h|2h30|3h|3h30|C
+Cinéma|Quel film de Pixar met en scène un rat cuisinier ?|Monsters Inc.|Cars|Ratatouille|WALL-E|C
+Cinéma|Quel acteur français est connu pour "Intouchables" (2011) ?|Vincent Cassel|Gad Elmaleh|Omar Sy|Jamel Debbouze|C
