@@ -8,7 +8,7 @@ let M = document.getElementById("Menu");
 
 let toutesLesQuestions = [];
 
-fetch("questions.txt")
+fetch("Questions.txt")
   .then((res) => res.text())
   .then((text) => {
     text.split("\n").forEach((line) => {
