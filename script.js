@@ -4,75 +4,141 @@ let h = document.getElementById("Histoire");
 let c = document.getElementById("Cinéma");
 let M = document.getElementById("Menu");
 
-let unter = true;
+// -------------------------- Chargement des questions ------------------------------
 
-// -------------------------- QCM ------------------------------
-
-class Question {
-  constructor(type, id, reponseJuste) {
-    this.type = type;
-    this.id = id;
-    this.reponses = [];
-    this.reponse = reponseJuste;
-  }
-
-  ajouterReponse(rep) {
-    this.reponses.push(rep);
-  }
-}
+let toutesLesQuestions = [];
 
 fetch("questions.txt")
   .then((res) => res.text())
   .then((text) => {
-    const questions = [];
-    let currentTheme = "";
-
     text.split("\n").forEach((line) => {
       line = line.trim();
-      if (line.startsWith("[")) {
-        currentTheme = line.slice(1, -1); // ex: "Geo"
-      } else if (line && !line.startsWith("#")) {
+      if (line && !line.startsWith("#") && !line.startsWith("[")) {
         const parts = line.split("|");
         if (parts.length === 7) {
-          questions.push({
+          toutesLesQuestions.push({
             theme: parts[0],
             question: parts[1],
             reponses: { A: parts[2], B: parts[3], C: parts[4], D: parts[5] },
-            bonne: parts[6], // "A", "B", "C" ou "D"
+            bonne: parts[6].trim(),
           });
         }
       }
     });
-
-    // Filtrer par thème :
-    const questionsGeo = questions.filter((q) => q.theme === "Geo");
   });
 
-//------------------------------- Animation ------------------------------
+// -------------------------- Affichage QCM ------------------------------
+
+let questionIndex = 0;
+let questionsActuelles = [];
+let score = 0;
+
+function afficherQuestion() {
+  const conteneur = document.getElementById("qcm-conteneur");
+  conteneur.innerHTML = "";
+
+  if (questionIndex >= questionsActuelles.length) {
+    conteneur.innerHTML = `
+      <div class="score-final">
+        <h2>Terminé ! 🎉</h2>
+        <p>Score : ${score} / ${questionsActuelles.length}</p>
+        <button id="rejouer">Rejouer</button>
+      </div>`;
+    document.getElementById("rejouer").addEventListener("click", () => {
+      conteneur.innerHTML = "";
+      entrer();
+    });
+    return;
+  }
+
+  const q = questionsActuelles[questionIndex];
+
+  const titre = document.createElement("h2");
+  titre.textContent = `Question ${questionIndex + 1} / ${questionsActuelles.length}`;
+  titre.className = "qcm-titre";
+  conteneur.appendChild(titre);
+
+  const enonce = document.createElement("p");
+  enonce.textContent = q.question;
+  enonce.className = "qcm-question";
+  conteneur.appendChild(enonce);
+
+  const grille = document.createElement("div");
+  grille.className = "qcm-grille";
+
+  Object.entries(q.reponses).forEach(([lettre, texte]) => {
+    const btn = document.createElement("button");
+    btn.textContent = `${lettre}. ${texte}`;
+    btn.className = "qcm-btn";
+
+    btn.addEventListener("click", () => {
+      grille.querySelectorAll("button").forEach((b) => (b.disabled = true));
+
+      if (lettre === q.bonne) {
+        btn.classList.add("correct");
+        score++;
+      } else {
+        btn.classList.add("incorrect");
+        grille.querySelectorAll("button").forEach((b) => {
+          if (b.textContent.startsWith(q.bonne)) b.classList.add("correct");
+        });
+      }
+
+      setTimeout(() => {
+        questionIndex++;
+        afficherQuestion();
+      }, 1200);
+    });
+
+    grille.appendChild(btn);
+  });
+
+  conteneur.appendChild(grille);
+}
+
+function lancerQCM(theme) {
+  score = 0;
+  questionIndex = 0;
+  questionsActuelles = toutesLesQuestions
+    .filter((q) => q.theme === theme)
+    .sort(() => Math.random() - 0.5);
+
+  const conteneur = document.getElementById("qcm-conteneur");
+  conteneur.style.display = "block";
+  afficherQuestion();
+}
+
+// -------------------------- Animation ------------------------------
 
 const boutons = [l, g, h, c];
 
 function entrer() {
+  score = 0;
+  questionIndex = 0;
+  document.getElementById("qcm-conteneur").style.display = "none";
+  document.getElementById("qcm-conteneur").innerHTML = "";
+
   boutons.forEach((element) => {
-    element.classList.remove("exit"); // ❗ important
-    element.classList.remove("enter"); // reset
-    void element.offsetWidth; // reset animation
-    element.classList.add("enter"); // rejoue l’entrée
+    element.classList.remove("exit");
+    element.classList.remove("enter");
+    void element.offsetWidth;
+    element.classList.add("enter");
   });
 }
 
-function sortir() {
+function sortir(theme) {
   boutons.forEach((element) => {
-    element.classList.remove("enter"); // ❗ important
-    element.classList.remove("exit"); // reset
-    void element.offsetWidth; // reset animation
-    element.classList.add("exit"); // rejoue la sortie
+    element.classList.remove("enter");
+    element.classList.remove("exit");
+    void element.offsetWidth;
+    element.classList.add("exit");
   });
+
+  setTimeout(() => lancerQCM(theme), 700);
 }
 
-l.addEventListener("click", sortir);
-g.addEventListener("click", sortir);
-h.addEventListener("click", sortir);
-c.addEventListener("click", sortir);
-
+l.addEventListener("click", () => sortir("Language"));
+g.addEventListener("click", () => sortir("Geo"));
+h.addEventListener("click", () => sortir("Histoire"));
+c.addEventListener("click", () => sortir("Cinéma"));
 M.addEventListener("click", entrer);
