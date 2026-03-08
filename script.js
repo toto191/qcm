@@ -104,7 +104,7 @@ function lancerQCM(theme) {
     .sort(() => Math.random() - 0.5);
 
   const conteneur = document.getElementById("qcm-conteneur");
-  conteneur.style.display = "block";
+  conteneur.style.display = "flex";
   afficherQuestion();
 }
 
@@ -115,10 +115,12 @@ const boutons = [l, g, h, c];
 function entrer() {
   score = 0;
   questionIndex = 0;
-  document.getElementById("qcm-conteneur").style.display = "none";
-  document.getElementById("qcm-conteneur").innerHTML = "";
+  const conteneur = document.getElementById("qcm-conteneur");
+  conteneur.style.display = "none";
+  conteneur.innerHTML = "";
 
   boutons.forEach((element) => {
+    element.style.display = "block";
     element.classList.remove("exit");
     element.classList.remove("enter");
     void element.offsetWidth;
