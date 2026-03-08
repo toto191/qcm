@@ -147,14 +147,15 @@ body {
 }
 
 .qcm-grille {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 15px;
-  align-items: center;
+  justify-content: center;   /* centre la grille */
+    align-items: center;
 }
 
 .qcm-btn {
-  width: 260px;
+  width: 260px;              /* même largeur que #Type button */
   padding: 18px 25px;
   font-size: 1rem;
   font-weight: 600;
@@ -165,6 +166,7 @@ body {
   backdrop-filter: blur(8px);
   cursor: pointer;
   transition: 0.3s ease;
+  justify-self: center;      /* centre chaque bouton dans la grille */
 }
 
 .qcm-btn:hover:not(:disabled) {
